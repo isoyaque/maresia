@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maresia Bebidas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/Logo.png" type="image/x-icon">
+    <!-- bibliotecas -->
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.3.0/uicons-regular-straight/css/uicons-regular-straight.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.3.0/uicons-thin-rounded/css/uicons-thin-rounded.css'>
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.3.0/uicons-thin-straight/css/uicons-thin-straight.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.3.0/uicons-brands/css/uicons-brands.css'>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html"><img src="imagens/Logo  2.png" alt="Logo"></a>
+        <div class="nav-bar">
+            <ul>
+                <a href="index.html">
+                    <li><i class="fi fi-rs-house-chimney"></i> Home</li>
+                </a>
+                <a href="sobre.html">
+                    <li><i class="fi fi-tr-brightness"></i> Sobre</li>
+                </a>
+                <a href="produtos.html">
+                    <li><i class="fi fi-ts-box-alt"></i> Produtos</li>
+                </a>
+                <a href="loja.html">
+                    <li><i class="fi fi-rs-shopping-bag-add"></i> Loja</li>
+                </a>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <img src="imagens/Maresia (4).png" alt="caminhãozinho" id="caminhãozinho">
+
+        <!-- <p id="embreve"> Em construção! <i class="fi fi-rs-hammer-crash"></i></p> -->
+
+
+        <h3 class="produtos-title">Refrigerantes</h3>
+
+        <div class="container">
+
+            <div class="marcas" id="pet200ml">
+                <p>Mini pet 200ml</p>
+                <img src="imagens/produtos/mini pet/mini pet.png" alt="Logo marca" onclick="abrir('desc-pet200ml')">
+            </div>
+
+            <div class="marcas" id="lata220ml">
+                <p>Mini lata 220ml</p>
+                <img src="imagens/produtos/mini lata/mini lata.png" alt="Logo marca" onclick="abrir('desc-lata220ml')">
+            </div>
+
+            <div class="marcas" id="lata350ml">
+                <p>Latas 350ml</p>
+                <img src="imagens/produtos/lata/coca lata.png" alt="Logo marca" onclick="abrir('desc-lata350ml')">
+            </div>
+
+            <div class="marcas" id="pet600ml">
+                <p>Pet 600ml</p>
+                <img src="imagens/produtos/600ml/coca 600ml.png" alt="Logo marca" onclick="abrir('desc-pet600ml')">
+            </div>
+
+            <div class="marcas" id="pet2l">
+                <p>Pet 2l</p>
+                <img src="imagens/produtos/2l/coca 2l.png" alt="Logo marca" onclick="abrir('desc-pet2l')">
+            </div>
+        </div>
+        <div class="desc">
+            <div class="descricao" id="desc-pet200ml">
+                <img src="imagens/produtos/mini pet/guarana 200ml.webp">
+                <img src="imagens/produtos/mini pet/mini pet.png">
+                <img src="imagens/produtos/mini pet/zero.jpg">
+                <img src="imagens/produtos/mini pet/pepsi 200ml.jfif">
+                <img src="imagens/produtos/mini pet/soda 200ml.jfif">
+                <img src="imagens/produtos/mini pet/sukita 200ml.jpg">
+            </div>
+
+            
+            <div class="descricao" id="desc-lata220ml">
+                <img src="imagens/produtos/mini lata/mini lata.png">
+                <img src="imagens/produtos/mini lata/coca zero.jfif">
+                <img src="imagens/produtos/mini lata/laranja.png">
+                <img src="imagens/produtos/mini lata/sprite.webp">
+                <img src="imagens/produtos/mini lata/uva.webp">
+
+            </div>
+
+            <div class="descricao" id="desc-lata350ml">
+                <img src="imagens/produtos/lata/guaana.jpg">
+                <img src="imagens/produtos/lata/guarana zero.webp">
+                <img src="imagens/produtos/lata/coca lata.png">
+                <img src="imagens/produtos/lata/itubaina.webp">
+                <img src="imagens/produtos/lata/laranja.webp">
+                <img src="imagens/produtos/lata/soda.jpg">
+                <img src="imagens/produtos/lata/uva.jpg">
+                <img src="imagens/produtos/lata/sprite.webp">
+            </div>
+            
+            <div class="descricao" id="desc-pet600ml">
+
+                <img src="imagens/produtos/600ml/Guarana lata.jpg">
+                <img src="imagens/produtos/600ml/coca 600ml.png">
+
+            </div>
+
+            <div class="descricao" id="desc-pet2l">
+                <img src="imagens/produtos/2l/Guarana.jpg">
+                <img src="imagens/produtos/2l/laranja.jpg">
+                <img src="imagens/produtos/2l/soda.jpg">
+                <img src="imagens/produtos/2l/uva.webp">
+                <img src="imagens/produtos/2l/coca 2l.png">
+                <img src="imagens/produtos/2l/zero.jpg">
+
+            </div>
+        </div>
+        <!-- Cervejas -->
+
+        <h3 class="produtos-title">Cervejas</h3>
+
+        <div class="container">
+
+            <div class="marcas" id="cerv.lata269ml">
+                <p>Lata 269ml</p>
+                <img src="imagens/produtos/cerv 269/heineken.png" alt="Logo marca" onclick="abrir('desc-cerv.lata269ml')">
+            </div>
+
+            <div class="marcas" id="cerv.lata350ml">
+                <p>Lata 350ml</p>
+                <img src="imagens/produtos/cerv lata/amstel 350.png" alt="Logo marca" onclick="abrir('desc-cerv.lata350ml')">
+            </div>
+
+            <div class="marcas" id="cerv.long330ml">
+                <p>Long neck</p>
+                <img src="imagens/produtos/cerv long/corona long.png" alt="Logo marca" onclick="abrir('desc-cerv.long330ml')">
+            </div>
+
+            <div class="marcas" id="600ml">
+                <p>600 ml</p>
+                <img src="imagens/produtos/cerv 600/Brahma duplo 600ml.webp" alt="Logo marca" onclick="abrir('desc-600ml')">
+            </div>
+        </div>
+        <!-- descrição block -->
+        <div class="desc">
+            <div class="descricao" id="desc-cerv.lata269ml">
+                <img src="imagens/produtos/cerv 269/amstel.jpg">
+                <img src="imagens/produtos/cerv 269/budweiser.jpg">
+                <img src="imagens/produtos/cerv 269/heineken.png">
+
+            </div>
+
+            
+            <div class="descricao" id="desc-cerv.lata350ml">
+
+                <img src="imagens/produtos/cerv lata/amstel.webp">
+                <img src="imagens/produtos/cerv lata/brahma.jpg">
+                <img src="imagens/produtos/cerv lata/duplo.webp">
+                <img src="imagens/produtos/cerv lata/eisenbahn.jpg">
+                <img src="imagens/produtos/cerv lata/heineken zero.webp">
+                <img src="imagens/produtos/cerv lata/heineken.jpg">
+                <img src="imagens/produtos/cerv lata/itaipava.jpg">
+                <img src="imagens/produtos/cerv lata/petra.jpg">
+
+            </div>
+
+            <div class="descricao" id="desc-cerv.long330ml">
+
+                <img src="imagens/produtos/cerv long/71062-cerveja-budweiser-long-neck-330ml.20230214153909.jpg">
+                <img src="imagens/produtos/cerv long/corona long.png">
+                <img src="imagens/produtos/cerv long/heineken zero.webp">
+                <img src="imagens/produtos/cerv long/heineken.jfif">
+                <img src="imagens/produtos/cerv long/stella.jpg">
+
+            </div>
+            
+            <div class="descricao" id="desc-600ml">
+
+                <img src="imagens/produtos/cerv 600/amstel.webp">
+                <img src="imagens/produtos/cerv 600/Brahma duplo 600ml.webp">
+                <img src="imagens/produtos/cerv 600/heineken 600ml.jpg">
+                <img src="imagens/produtos/cerv 600/imperio.jpg">
+                <img src="imagens/produtos/cerv 600/original.webp">
+                <img src="imagens/produtos/cerv 600/skol 600ml.jpg">
+                <img src="imagens/produtos/cerv 600/stella.webp">
+
+            </div>
+
+        </div>
+
+        <h3 class="produtos-title">Outros</h3>
+
+        <div class="container">
+
+            <div class="marcas" id="energetico">
+                <p>Energético</p>
+                <img src="imagens/produtos/energeticos/red bull.png" alt="Logo marca" onclick="abrir('desc-energetico')">
+            </div>
+
+            <div class="marcas" id="whisky">
+                <p>Whisky</p>
+                <img src="imagens/produtos/whisky/honey.png" alt="Logo marca" onclick="abrir('desc-whisky')">
+            </div>
+
+            <div class="marcas" id="vinho">
+                <p> Vinho</p>
+                <img src="imagens/produtos/vinho/3 medalhas.png" alt="Logo marca" onclick="abrir('desc-vinho')">
+            </div>
+
+            <div class="marcas" id="outros">
+                <p>Outros</p>
+                <img src="imagens/produtos/Outros/beats.png" alt="Logo marca" onclick="abrir('desc-outros')">
+            </div>
+
+        </div>
+        <div class="desc">
+            <div class="descricao" id="desc-energetico">
+                <img src="imagens/produtos/energeticos/baly.jpg">
+                <img src="imagens/produtos/energeticos/branco.webp">
+                <img src="imagens/produtos/energeticos/mango.jpg">
+                <img src="imagens/produtos/energeticos/melancia.jpg">
+                <img src="imagens/produtos/energeticos/monster.webp">
+                <img src="imagens/produtos/energeticos/red bull.png">
+                <img src="imagens/produtos/energeticos/tropical.jpg">
+            </div>
+
+            
+            <div class="descricao" id="desc-whisky">
+                <img src="imagens/produtos/whisky/balla 12.png">
+                <img src="imagens/produtos/whisky/balla 8.jpg">
+                <img src="imagens/produtos/whisky/buchanas.jpg">
+                <img src="imagens/produtos/whisky/cavalo.jfif">
+                <img src="imagens/produtos/whisky/honey.png">
+                <img src="imagens/produtos/whisky/jack.jpg">
+                <img src="imagens/produtos/whisky/red.jpg">
+
+            </div>
+
+            <div class="descricao" id="desc-vinho">
+                <img src="imagens/produtos/vinho/3 medalhas.png">
+                <img src="imagens/produtos/vinho/gato negro.jpg">
+                <img src="imagens/produtos/vinho/quinta.jpg">
+                <img src="imagens/produtos/vinho/santa carolina.jpg">
+                <img src="imagens/produtos/vinho/terra velha.jpg">
+                <img src="imagens/produtos/vinho/tonatto.webp">
+            </div>
+            
+            <div class="descricao" id="desc-outros">
+
+                <img src="imagens/produtos/Outros/beats lata.webp">
+                <img src="imagens/produtos/Outros/beats.png">
+                <img src="imagens/produtos/Outros/gatorade.png">
+
+            </div>
+        </div>
+
+    </Main>
+    <footer>
+        <div class=" end">
+            <address>Av. Afonso pena n°589 - Santos/SP</address>
+            <div class="cnpj">17.325.767/0001-93</div>
+        </div>
+        <div class="end">
+            <address>Av. Rodrigues Alves n°206 - Santos/SP</address>
+            <div class="cnpj">09.054.551/0001-02
+            </div>
+        </div>
+        <a href="https://www.instagram.com/maresia_bebidas/"><img src="imagens/Instagram_icon.png.webp"
+                alt="Instagram logo"></a>
+    </footer>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+    <!-- Script -->
+</body>
+
+</html>
