@@ -7,8 +7,7 @@
     
     <title>Maresia Bebidas</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="imagens/Logo.png" type="image/x-icon">
-    
+    <link rel="shortcut icon" href="imagens/Logo2.png" type="image/x-icon">
     <!-- bibliotecas -->
     <link rel='stylesheet'
         href='https://cdn-uicons.flaticon.com/2.3.0/uicons-regular-straight/css/uicons-regular-straight.css'>
@@ -43,7 +42,7 @@
         <div class="banner">
             <h1>Maresia bebidas</h1>
             <p>Seu mercado de Bebidas</p>
-            <img src="imagens/Maresia (4).png" alt="caminhãozinho" id="caminhãozinho">
+            <img src="imagens/Maresia (4).png" alt="caminhãozinho" id="caminhãozinho" style="overflow-x: hidden;">
         </div>
         <!-- Chat gpt -->
         <div class="carousel">
@@ -147,9 +146,22 @@
             var formattedValueName = inputValueName.split(' ').join('%20');
             var formattedValueNumber = inputValueNumber.split(' ').join('%20');
 
-            var url = 'https://wa.me/5513997739347?text=Ol%C3%A1%2C+me+chamo+' + inputValueName + '+e+meu+telefone+%C3%A9+' + inputValueNumber + '%2C+desejo+receber+as+ofertas%21';
+            var url = 'https://wa.me/5513998033131?text=Ol%C3%A1%2C+me+chamo+' + inputValueName + '+e+meu+telefone+%C3%A9+' + inputValueNumber + '%2C+desejo+receber+as+ofertas%21';
             window.location.href = url;
         }
+
+        document.getElementById("userName").addEventListener('keypress', function(event) {
+    if (event.key === 'Enter') {
+        redirectToURL();
+    }
+});
+
+document.getElementById("userNumber").addEventListener('keypress', function(event) {
+    if (event.key === 'Enter') {
+        redirectToURL();
+    }
+});
+        
 
     </script>
 
