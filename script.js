@@ -39,3 +39,17 @@ function mostrarDistribuidora() {
         distribuidora.style.display = "none";
     }
 }
+const produtos = document.querySelectorAll('.produto');
+
+produtos.forEach(produto => {
+    const img = produto.querySelector('img');
+    const spans = produto.querySelectorAll('span'); 
+
+    img.addEventListener('mouseover', () => {
+        spans.forEach(span => span.style.opacity = '1'); 
+    });
+
+    img.addEventListener('mouseout', () => {
+        spans.forEach(span => span.style.opacity = '0');
+    });
+});

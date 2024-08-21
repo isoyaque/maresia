@@ -43,6 +43,9 @@ main {
     min-height: 50rem;
 }
 
+body {
+    background-color: #292929;
+}
 
 /* Global */
 nav {
@@ -356,6 +359,7 @@ footer {
     padding: 25px;
     background-color: #585858;
     position: relative;
+    overflow: hidden;
 }
 
 footer .end {
@@ -372,100 +376,147 @@ footer img {
 }
 
 /* PRODUTOS */
-.container {
-    display: flex;
-    padding: 10px;
-    background-color: #292929;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
- 
-.marcas p {
-    margin-top: 30px;
-    text-align: center;
-    font-weight: bold;
+
+.deskto p {
+    position: relative;
     display: block;
-    color: white;
-}
-
-.marcas img {
-    margin: 20px;
-    height: 150px;
-    cursor: pointer;
-}
-
-.produtos-title {
-    background-color: rgb(37, 37, 37);
-    color: white;
-    font-size: 40px;
-    padding: 30px;
-    text-align: center;
-}
-
-.desc {
-    background-color: gray;
-    padding: 20px;
-
-}
-
-.descricao {
-    background-color: rgb(255, 255, 255);
-    justify-content: space-between;
-    width: 95%;
-    padding: 0 10px;
-    display:flex;
+    width: 100%;
     margin: 0 auto;
-    border-radius: 20px;
-    border: none;
+}
+
+.mobile {
     display: none;
-    overflow: hidden;
-    /* Garante que o conteúdo não apareça fora da área visível */
-    height: 0;
-    animation: ease;
-    transition: height 1s ease-out;
-    /* Transição de 1 segundo */
 }
 
-.desc-produtos{
-    display: block;
-    color: black;
+.prateleira-title {
+    color: white;
+    margin: 30px;
+    font-size: 50px;
     text-align: center;
 }
 
-
-.descricao.mostrar {
+.prateleira-bg {
+    background-image: url(imagens/prateleira-luz/Design\ sem\ nome\ \(21\).jpg);
+    height: 45rem;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 20px;
     display: block;
-    /* Torna a `div` visível */
+    position: relative;
+    background-size: cover;
 }
 
-.descricao.mostrar.anime {
-    height: auto;
-    /* Define a altura automaticamente */
-    max-height: 1000px;
-    /* Define uma altura máxima para a transição (ajuste conforme necessário) */
+.prateleira-mobile {
+    display: none;
+}
+
+.prateleiras {
+    display: flex;
+    position: relative;
+    width: 75%;
+    margin: 0 auto;
 }
 
 
-.descricao img {
-    max-height: 200px;
-    margin: 20px;
-    object-fit: cover;
 
-}
-
-#embreve {
-    transform: rotatez(-10deg);
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: red;
+.produto {
     text-align: center;
-    margin-top: 150px;
-    font-size: 180px;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 1),
-        -1px -1px 2px rgba(0, 0, 0, 1);
+    display: block;
 }
+
+.produto img {
+    height: 180px;
+    display: block;
+    margin-bottom: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+    z-index: 1;
+    margin: 0 auto;
+}
+
+.produto img:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0px 0px 7px #ffffff);
+}
+
+.produto span {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 5px;
+    color: white;
+    font-size: large;
+    border-radius: 5px;
+    opacity: 0;
+    z-index: 2;
+    position: relative;
+}
+
+.prateleira1,
+.prateleira2,
+.prateleira3,
+.prateleira4,
+.prateleira5,
+.prateleira6,
+.prateleira7,
+.prateleira8,
+.prateleira9 {
+    display: flex;
+    position: absolute;
+}
+
+.prateleira1 {
+    top: 20px;
+    left: 40px;
+}
+
+.prateleira2 {
+    top: 20px;
+    left: 430px;
+}
+
+.prateleira3 {
+    top: 20px;
+    left: 820px;
+}
+
+.prateleira4 {
+    left: 50px;
+    top: 230px;
+}
+
+.prateleira5 {
+    top: 230px;
+    left: 440px;
+}
+
+.prateleira6 {
+    top: 230px;
+    left: 820px;
+}
+
+.prateleira7 {
+    left: 50px;
+    top: 440px;
+}
+
+.prateleira8 {
+    left: 440px;
+    top: 440px;
+
+}
+
+.prateleira9 {
+    left: 820px;
+    top: 440px;
+
+}
+
+
+
+
 
 /*  */
-
 .container-loja {
     background-color: #292929;
     color: white;
@@ -567,6 +618,26 @@ footer img {
     border-radius: 20px;
 }
 
+
+.prateleira-conheca{
+    padding: 15px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 30px;
+}
+
+.prateleira-conheca a{
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.prateleira-conheca a:hover{
+    color: rgb(160, 231, 255);
+    text-shadow: rgb(17, 0, 255) 1px 0 10px;
+}
 
 /* Celular */
 
@@ -699,22 +770,74 @@ footer img {
         width: 100%;
         animation: scroll 10s linear infinite;
     }
-    .descricao{
+
+    .descricao {
         display: block;
     }
 
-    .descricao img{
+    .descricao img {
         margin: 0 auto;
         display: flex;
     }
 
-    .container{
+    .container {
         display: block;
     }
 
-    .container img{
+    .container img {
         margin: 0 auto;
         display: flex;
-        
+    }
+
+    .prateleira-bg {
+        height: 125rem;
+        background-repeat: repeat;
+    }
+
+    .produto img {
+        height: 150px;
+    }
+
+    .produto span {
+        font-size: 15px;
+    }
+
+
+
+    .prateleira-bg {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .mobile-prateleira {
+        width: 90%;
+        margin: 0 5%;
+        height: 12rem;
+        background-image: url(imagens/prateleira-luz/Sem\ nome\ \(2160\ x\ 1080\ px\).jpg);
+        position: relative;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .mobile-bg {
+        width: 100%;
+    }
+
+    .prateleira1,
+    .prateleira2,
+    .prateleira3,
+    .prateleira4,
+    .prateleira5,
+    .prateleira6,
+    .prateleira7,
+    .prateleira8,
+    .prateleira9 {
+        top: 13%;
+        left: 15%;
     }
 }
