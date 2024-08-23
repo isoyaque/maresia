@@ -255,7 +255,15 @@ footer img {
         right: -100px;
         overflow-x: hidden;
     }
+    @keyframes correr {
+    0% {
+        transform: translateX(0);
+    }
 
+    100% {
+        transform: translateX(-1000%);
+    }
+}
 
     nav {
         margin: 2px;
