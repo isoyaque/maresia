@@ -389,7 +389,6 @@ footer img {
 
 .geladeira-desktop .prateleira-bg1,
 .geladeira-desktop .prateleira-bg2 {
-    z-index: 0;
     margin: 0 auto;
     display: block;
     position: relative;
@@ -407,7 +406,6 @@ footer img {
 .geladeira-desktop .produto {
     position: relative;
     text-align: center;
-    z-index: 1;
     height: auto;
     width: 25%;
 }
@@ -435,7 +433,8 @@ footer img {
     display: inline-block;
     height: auto;
     transition: .5s;
-    z-index: 2;
+    z-index: 3;
+    position: relative;
 }
 
 .geladeira-desktop .produto img:hover {
@@ -455,7 +454,8 @@ footer img {
     font-size: large;
     font-family: arial;
     opacity: 0;
-    z-index: 3;
+    z-index: 4;
+    position: relative;
 }
 
 .pet200ml,
@@ -490,7 +490,7 @@ footer img {
 
     #caminhãozinho {
         position: absolute;
-        z-index: 3;
+        z-index: 10;
         bottom: -50px;
         filter: drop-shadow(14px 7px 5px #000000);
         animation: correr 12s linear forwards;
@@ -549,6 +549,8 @@ footer img {
 
     .geladeira-desktop .produto img {
         width: 100%;
+        z-index: 3;
+        position: relative;
 
     }
 
