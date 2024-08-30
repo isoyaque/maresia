@@ -15,11 +15,11 @@ function login() {
 
     if (user) {
         // Armazena o estado de login no localStorage
-        localStorage.setItem('loggedIn', 'true');
+        localStorage.setItem('loggedIn2', 'true');
         // Armazena o nome do usuário no localStorage
         localStorage.setItem('username', username);
         // Redireciona para a página protegida
-        window.location.href = "pagina1.html";
+        window.location.href = "pagina2.html";
     } else {
         // Exibe uma mensagem de erro se as credenciais estiverem incorretas
         errorMessage.textContent = "Usuário ou senha incorretos!";
