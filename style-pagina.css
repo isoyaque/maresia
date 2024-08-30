@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+}
+.hidden {
+    display: none;
+}
+.form-container {
+    margin: 20px;
+}
+.announcement {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.top-side{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+}
+
+.top-side button{
+    height: 2rem;
+    padding: 0 1rem;
+    border-radius: 20px;
+}
+
+#auth-container{
+    color: rgb(40, 40, 40);
+}
+
+#auth-container input{
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid gray;
+    margin:0 10px;
+}
+
+#auth-container button{
+    border-radius: 20px;
+    background-color: rgb(33, 37, 255);
+    border: none;
+    padding: 5px 10px;
+    color: white;
+}
+
+.comunicado{
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 2rem;
+}

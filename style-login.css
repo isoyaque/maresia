@@ -81,6 +81,21 @@ input[type=submit]:active {
     text-align: center;
 }
 
+body {
+    font-family: Arial, sans-serif;
+}
+.hidden {
+    display: none;
+}
+.form-container {
+    margin: 20px;
+}
+.announcement {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
 
 @media (max-width: 480px) {
     body {
