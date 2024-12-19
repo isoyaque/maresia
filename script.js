@@ -1,8 +1,8 @@
 // botão lojas
-const chamarDist = document.querySelectorAll('#distribuidora-chamar')
-const rotaDist = document.querySelectorAll('#distribuidora-rota')
-const chamarAdega = document.querySelectorAll('#adega-chamar')
-const rotaAdega = document.querySelectorAll('#adega-rota')
+const chamarDist = document.querySelector('#distribuidora-chamar')
+const rotaDist = document.querySelector('#distribuidora-rota')
+const chamarAdega = document.querySelector('#adega-chamar')
+const rotaAdega = document.querySelector('#adega-rota')
 
 chamarDist.addEventListener('click', () => {
     window.location.href = "https://api.whatsapp.com/send?phone=5513991868515&text=Ol%C3%A1,%20vim%20do%20site,%20e%20gostaria%20de%20ser%20atendido(a)%20por%20aqui!!";
@@ -37,3 +37,5 @@ btnOfertas.addEventListener('click', () => {
     NomeOfertas(inputNome.value)
 })
 
+
+console.log('linkou')
