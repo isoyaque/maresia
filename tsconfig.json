@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+        "target": "ESNext",
+        "outDir": "./scr/",
+        "noEmitOnError": true
+    },
+    "include": [
+        "./typeScript/*"
+    ]
+}
